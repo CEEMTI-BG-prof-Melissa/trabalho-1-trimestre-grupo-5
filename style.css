@@ -7,9 +7,18 @@
     font-family: "Poppins", sans-serif;
     
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
 
 body{
-    background-color: #f3e5e0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:  url(old-books-arrangement-with-copy-space.jpg) no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 header{
@@ -20,14 +29,14 @@ header{
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
-    z-index: 99;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     background-color: black;
+    z-index: 999999;
 }
 a{
     font-size: 20px;
     color: white;
-    user-select: none;
-    background-color: black;
+    user-select: none; 
     text-decoration: none;
     margin: 0 15px;
 }
@@ -39,13 +48,56 @@ a{
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
-    background-color: black;
 }
 
-h2 {
-    text-align: center;
-}
 
 main{
-    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px; 
+    padding-top: 90px;
+}
+
+main h2{
+    color: white;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.funcionais, .nao-funcionais, .inverso{
+    width: 60%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+footer{
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    margin-top: 40px;
+}
+
+.footer-container{
+    max-width: 1000%;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    font-size: 1.1em;
+    color: #fff;
 }
